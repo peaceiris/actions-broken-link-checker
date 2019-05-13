@@ -2,7 +2,7 @@ FROM node:10.15.3-alpine
 
 LABEL "com.github.actions.name"="Broken link checker for web"
 LABEL "com.github.actions.description"="Find broken links, missing images, etc in your HTML"
-LABEL "com.github.actions.icon"="check"
+LABEL "com.github.actions.icon"="link"
 LABEL "com.github.actions.color"="green"
 
 LABEL "repository"="https://github.com/peaceiris/actions-broken-link-checker"
