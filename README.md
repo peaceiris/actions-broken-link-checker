@@ -4,7 +4,7 @@
 
 
 
-## GitHub Actions for
+## GitHub Actions for broken-link-checker
 
 - [stevenvachon/broken-link-checker: Find broken links, missing images, etc in your HTML.](https://github.com/stevenvachon/broken-link-checker)
 
