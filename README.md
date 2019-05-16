@@ -16,7 +16,7 @@
 
 ### Create `main.workflow`
 
-```sh
+```hcl
 workflow "Main workflow" {
   on = "push"
   resolves = ["broken-link-checker"]
