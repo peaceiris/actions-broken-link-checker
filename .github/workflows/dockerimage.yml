@@ -17,4 +17,4 @@ jobs:
       run: |
         docker build . --file Dockerfile --tag ${DOCKERIMAGE} &&
         docker run ${DOCKER_IMAGE} "https://peaceiris.com" -ro ||
-        (echo -e "\e[31m[${GITHUB_ACTION}] failed to build\e[m" && exit 1)
+        (echo -e "\e[31m[${GITHUB_WORKFLOW}] failed to build\e[m" && exit 1)
