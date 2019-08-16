@@ -13,7 +13,7 @@ jobs:
     - name: Build the Docker image
       if: github.event.deleted == false
       env:
-        DOCKER_IMAGE: GITHUB_REPOSITORY:GITHUB_SHA
+        DOCKER_IMAGE: ${{ github.repository }}:${{ github.sha }}
       run: |
         docker build . --file Dockerfile --tag ${DOCKER_IMAGE} &&
         docker run ${DOCKER_IMAGE} "https://peaceiris.com" -ro ||
