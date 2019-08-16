@@ -15,6 +15,6 @@ jobs:
       env:
         DOCKER_IMAGE: ${{ github.repository }}:${{ github.sha }}
       run: |
-        docker build . --file Dockerfile --tag ${DOCKER_IMAGE} &&
+        docker build . --file Dockerfile --tag ${DOCKERIMAGE} &&
         docker run ${DOCKER_IMAGE} "https://peaceiris.com" -ro ||
-        (echo -e "\e[31mfailed to build\e[m" && exit 1)
+        (echo -e "\e[31m[${GITHUB_ACTION}] failed to build\e[m" && exit 1)
